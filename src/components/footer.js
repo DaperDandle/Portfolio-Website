@@ -2,7 +2,7 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 const Footer = () => {
   return (
-    <Container fluid className="bg-dark text-light p-3">
+    <Container fluid className="border-top border-primary border-3 p-3">
       <footer className="d-flex justify-content-around">
         <p className="h5">
           Created with Gatsby by{" "}

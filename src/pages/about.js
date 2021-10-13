@@ -1,10 +1,13 @@
 import React from "react";
+import { Container, Row } from "react-bootstrap";
 import Layout from "../components/layout";
 
 const About = () => {
   return (
     <Layout>
-      <h2>About Me</h2>
+      <Container className="bg-primary">
+        <Row></Row>
+      </Container>
     </Layout>
   );
 };
