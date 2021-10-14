@@ -1,9 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
-import Navbar from "react-bootstrap/Navbar";
-import Container from "react-bootstrap/Container";
-import Nav from "react-bootstrap/Nav";
-import "bootstrap/dist/css/bootstrap.css";
+import { Navbar, Container, Nav } from "react-bootstrap";
+
 import logo from "../images/logo.png";
 
 const Navigation = () => {
@@ -22,27 +20,47 @@ const Navigation = () => {
         <Navbar.Collapse id="basic-navbar-nav" className="">
           <Nav className="justify-content-around w-100 fs-4">
             <Nav.Link className="p-3">
-              <Link to="/" className="text-decoration-none text-dark">
+              <Link
+                to="/"
+                className="text-decoration-none link-primary"
+                activeClassName="fw-bolder text-decoration-underline"
+              >
                 Home
               </Link>
             </Nav.Link>
             <Nav.Link className="p-3">
-              <Link to="/about" className="text-decoration-none text-dark">
+              <Link
+                to="/about"
+                className="text-decoration-none link-primary"
+                activeClassName="fw-bolder text-decoration-underline"
+              >
                 About Me
               </Link>
             </Nav.Link>
             <Nav.Link className="p-3">
-              <Link to="/projects" className="text-decoration-none text-dark">
+              <Link
+                to="/projects"
+                className="text-decoration-none link-primary"
+                activeClassName="fw-bolder text-decoration-underline"
+              >
                 Projects
               </Link>
             </Nav.Link>
             <Nav.Link className="p-3">
-              <Link to="/resume" className="text-decoration-none text-dark">
+              <Link
+                to="/resume"
+                className="text-decoration-none link-primary"
+                activeClassName="fw-bolder text-decoration-underline"
+              >
                 Resume
               </Link>
             </Nav.Link>
             <Nav.Link className="p-3">
-              <Link to="/contact" className="text-decoration-none text-dark">
+              <Link
+                to="/contact"
+                className="text-decoration-none link-primary"
+                activeClassName="fw-bolder text-decoration-underline"
+              >
                 Contact
               </Link>
             </Nav.Link>

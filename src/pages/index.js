@@ -5,6 +5,7 @@ import { StaticImage } from "gatsby-plugin-image";
 import { heroBg } from "../css/index.module.css";
 import { DiGithubAlt } from "react-icons/di";
 import { BsLinkedin } from "react-icons/bs";
+import "bootstrap/dist/css/bootstrap.css";
 const Index = () => {
   return (
     <Layout>
@@ -19,7 +20,7 @@ const Index = () => {
               />
             </Container>
           </Col>
-          <Col sm={5} className="bg-white card">
+          <Col sm={5} className="bg-white card p-5">
             <h1 className="text-center">Hi, I'm Dan!</h1>
             <hr className="bg-dark" />
             <p className="fs-4">
@@ -31,7 +32,7 @@ const Index = () => {
             <hr />
             <br />
             <div className="align-items-center">
-              <h4>Check out my Github and Linkedin!</h4>
+              <h4>Check out my Github and LinkedIn!</h4>
               <a href="https://github.com/DaperDandle" className="me-3">
                 <DiGithubAlt size={32} />
               </a>
