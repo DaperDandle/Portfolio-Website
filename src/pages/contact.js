@@ -6,14 +6,14 @@ const Contact = () => {
     <Layout>
       <Container>
         <Row className="justify-content-between my-3">
-          <Col sm={5} className="text-center">
+          <Col sm={5} className="text-center card">
             <h3>Like what you see?</h3>
             <hr className="bg-primary" />
             <p>
               If you liked my portfolio please feel free to send me a message
-              using the form on the left or by calling me at <span></span>! I am
-              currently looking for a full time front-end developer position and
-              would love to hear from you.
+              using the form on the left or by calling me at{" "}
+              <span>816-668-3159</span>! I am currently looking for a full time
+              front-end developer position and would love to hear from you.
             </p>
           </Col>
           <Col sm={5}>

@@ -22,7 +22,7 @@ const Navigation = () => {
             <Nav.Link className="p-3">
               <Link
                 to="/"
-                className="text-decoration-none link-primary"
+                className="text-decoration-none link-dark"
                 activeClassName="fw-bolder text-decoration-underline"
               >
                 Home
@@ -31,7 +31,7 @@ const Navigation = () => {
             <Nav.Link className="p-3">
               <Link
                 to="/about"
-                className="text-decoration-none link-primary"
+                className="text-decoration-none link-dark"
                 activeClassName="fw-bolder text-decoration-underline"
               >
                 About Me
@@ -40,7 +40,7 @@ const Navigation = () => {
             <Nav.Link className="p-3">
               <Link
                 to="/projects"
-                className="text-decoration-none link-primary"
+                className="text-decoration-none link-dark"
                 activeClassName="fw-bolder text-decoration-underline"
               >
                 Projects
@@ -49,7 +49,7 @@ const Navigation = () => {
             <Nav.Link className="p-3">
               <Link
                 to="/resume"
-                className="text-decoration-none link-primary"
+                className="text-decoration-none link-dark"
                 activeClassName="fw-bolder text-decoration-underline"
               >
                 Resume
@@ -58,7 +58,7 @@ const Navigation = () => {
             <Nav.Link className="p-3">
               <Link
                 to="/contact"
-                className="text-decoration-none link-primary"
+                className="text-decoration-none link-dark"
                 activeClassName="fw-bolder text-decoration-underline"
               >
                 Contact

@@ -6,7 +6,7 @@ import { Container, Row, Col } from "react-bootstrap";
 const AllProjects = () => {
   const data = useStaticQuery(graphql`
     query {
-      allContentfulProject {
+      allContentfulProject(sort: { fields: title }) {
         nodes {
           id
           url
@@ -26,8 +26,8 @@ const AllProjects = () => {
     }
   `);
   return (
-    <Container>
-      <Row className="g-3">
+    <Container className="my-3">
+      <Row className="g-3 mb-5">
         {data.allContentfulProject.nodes.map((project) => {
           const {
             contentfulid,
