@@ -2,25 +2,25 @@ import React from "react";
 import Layout from "../components/layout";
 import { Col, Row, Container } from "react-bootstrap";
 import { StaticImage } from "gatsby-plugin-image";
-import { heroBg } from "../css/index.module.css";
 import { DiGithubAlt } from "react-icons/di";
 import { BsLinkedin } from "react-icons/bs";
 import "bootstrap/dist/css/bootstrap.css";
+import { heroImg } from "../css/index.module.css";
 const Index = () => {
   return (
     <Layout>
-      <Container fluid className={`${heroBg} p-5 br-3`}>
+      <Container fluid className="p-5 br-3">
         <Row className="justify-content-around">
-          <Col sm={4}>
+          <Col md={4}>
             <Container className="bg-primary rounded-circle p-2">
               <StaticImage
                 src="../images/me.jpg"
                 alt="Daniel Weber"
-                className="img-fluid rounded-circle"
+                className={` ${heroImg}img-fluid rounded-circle`}
               />
             </Container>
           </Col>
-          <Col sm={5} className="bg-white card p-5">
+          <Col md={5} className="bg-white card p-5">
             <h1 className="text-center">Hi, I'm Dan!</h1>
             <hr className="bg-dark" />
             <p className="fs-4">

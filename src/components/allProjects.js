@@ -13,7 +13,11 @@ const AllProjects = () => {
           title
           contentfulid
           preview {
-            gatsbyImageData(layout: CONSTRAINED, placeholder: TRACED_SVG)
+            gatsbyImageData(
+              layout: CONSTRAINED
+              placeholder: TRACED_SVG
+              height: 500
+            )
           }
           tags {
             tags
@@ -38,7 +42,7 @@ const AllProjects = () => {
             description: { description },
           } = project;
           return (
-            <Col sm={4} key={contentfulid}>
+            <Col md={4} key={contentfulid}>
               <SingleProject
                 id={contentfulid}
                 url={url}
