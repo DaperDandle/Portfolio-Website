@@ -2,15 +2,18 @@ import React from "react";
 import { Container } from "react-bootstrap";
 const Tags = ({ tags }) => {
   return (
-    <Container className="d-flex justify-content-between">
-      {tags.map((tag, index) => {
-        return (
-          <div key={index} className="bg-light p-1">
-            {tag}
-          </div>
-        );
-      })}
-    </Container>
+    <>
+      <h5>Tags:</h5>
+      <Container className="d-flex flex-wrap justify-content-around">
+        {tags.map((tag, index) => {
+          return (
+            <div key={index} className="bg-light p-2 m-1 rounded">
+              {tag}
+            </div>
+          );
+        })}
+      </Container>
+    </>
   );
 };
 

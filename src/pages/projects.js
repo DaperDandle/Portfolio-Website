@@ -5,8 +5,8 @@ import { Container } from "react-bootstrap";
 const Projects = () => {
   return (
     <Layout>
-      <Container className="my-3">
-        <h1 className="text-center text-blue-600">Check Out My Projects!</h1>
+      <Container className="py-5">
+        <h1 className="text-center">Check Out My Projects!</h1>
         <AllProjects />
       </Container>
     </Layout>

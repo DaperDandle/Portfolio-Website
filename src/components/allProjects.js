@@ -30,8 +30,8 @@ const AllProjects = () => {
     }
   `);
   return (
-    <Container className="my-3">
-      <Row className="g-3 mb-5">
+    <Container>
+      <Row className="g-3">
         {data.allContentfulProject.nodes.map((project) => {
           const {
             contentfulid,

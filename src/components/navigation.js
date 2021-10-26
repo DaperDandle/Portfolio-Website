@@ -19,51 +19,45 @@ const Navigation = () => {
         />
         <Navbar.Collapse id="basic-navbar-nav" className="">
           <Nav className="justify-content-around w-100 fs-4">
-            <Nav.Link className="p-3">
-              <Link
-                to="/"
-                className="text-decoration-none link-dark"
-                activeClassName="fw-bolder text-decoration-underline"
-              >
-                Home
-              </Link>
-            </Nav.Link>
-            <Nav.Link className="p-3">
-              <Link
-                to="/about"
-                className="text-decoration-none link-dark"
-                activeClassName="fw-bolder text-decoration-underline"
-              >
-                About Me
-              </Link>
-            </Nav.Link>
-            <Nav.Link className="p-3">
-              <Link
-                to="/projects"
-                className="text-decoration-none link-dark"
-                activeClassName="fw-bolder text-decoration-underline"
-              >
-                Projects
-              </Link>
-            </Nav.Link>
-            <Nav.Link className="p-3">
-              <Link
-                to="/resume"
-                className="text-decoration-none link-dark"
-                activeClassName="fw-bolder text-decoration-underline"
-              >
-                Resume
-              </Link>
-            </Nav.Link>
-            <Nav.Link className="p-3">
-              <Link
-                to="/contact"
-                className="text-decoration-none link-dark"
-                activeClassName="fw-bolder text-decoration-underline"
-              >
-                Contact
-              </Link>
-            </Nav.Link>
+            <Link
+              to="/"
+              className="text-decoration-none link-dark p-3"
+              activeClassName="fw-bolder text-decoration-underline"
+            >
+              Home
+            </Link>
+
+            <Link
+              to="/about"
+              className="text-decoration-none link-dark p-3"
+              activeClassName="fw-bolder text-decoration-underline"
+            >
+              About Me
+            </Link>
+
+            <Link
+              to="/projects"
+              className="text-decoration-none link-dark p-3"
+              activeClassName="fw-bolder text-decoration-underline"
+            >
+              Projects
+            </Link>
+
+            <Link
+              to="/resume"
+              className="text-decoration-none link-dark p-3"
+              activeClassName="fw-bolder text-decoration-underline"
+            >
+              Resume
+            </Link>
+
+            <Link
+              to="/contact"
+              className="text-decoration-none link-dark p-3"
+              activeClassName="fw-bolder text-decoration-underline"
+            >
+              Contact
+            </Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>

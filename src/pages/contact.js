@@ -5,7 +5,7 @@ const Contact = () => {
   return (
     <Layout>
       <Container>
-        <Row className="justify-content-between my-3">
+        <Row className="justify-content-between py-3">
           <Col sm={5} className="text-center card">
             <h3 className="mt-3">Like what you see?</h3>
             <hr className="bg-primary" />
