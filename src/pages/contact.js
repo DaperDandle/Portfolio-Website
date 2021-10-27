@@ -6,18 +6,20 @@ const Contact = () => {
     <Layout>
       <Container>
         <Row className="justify-content-between py-3">
-          <Col sm={5} className="text-center card">
+          <Col md={5} className="text-center card my-2">
             <h3 className="mt-3">Like what you see?</h3>
             <hr className="bg-primary" />
             <p>
-              If you liked my portfolio please feel free to send me a message
-              using the form on the left or by calling me at{" "}
+              If you liked my portfolio please feel free to send a message to my
+              email using the form on the left or by calling me at{" "}
               <span>816-668-3159</span>! I am currently looking for a full time
               front-end developer position and would love to hear from you.
             </p>
           </Col>
-          <Col sm={5}>
-            <Form className="card p-3">
+          <Col md={5} className="card p-3 my-2">
+            <Form>
+              <h2 className="text-center">Get in Touch!</h2>
+              <hr className="bg-primary" />
               <Form.Group className="mb-3" controlId="nameInput">
                 <Form.Label>Name</Form.Label>
                 <Form.Control

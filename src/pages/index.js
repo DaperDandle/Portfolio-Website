@@ -4,7 +4,6 @@ import { Col, Row, Container } from "react-bootstrap";
 import { StaticImage } from "gatsby-plugin-image";
 import { DiGithubAlt } from "react-icons/di";
 import { BsLinkedin } from "react-icons/bs";
-import "bootstrap/dist/css/bootstrap.css";
 import { heroImg } from "../css/index.module.css";
 const Index = () => {
   return (

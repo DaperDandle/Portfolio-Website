@@ -13,35 +13,44 @@ const Resume = () => {
         <Accordion defaultActiveKey="0" className="p-5">
           <Accordion.Item eventKey="0">
             <Accordion.Header>Education</Accordion.Header>
-            <Accordion.Body className="d-flex flex-wrap justify-content-center">
-              <StaticImage
-                src="../images/park-logo.png"
-                alt="Park University Logo"
-                className="w-100 me-3"
-              />
-              <p>
-                <a
-                  href="https://www.park.edu/"
-                  style={{ color: "maroon", textDecoration: "none" }}
-                >
-                  Park University
-                </a>
-                : Bachelors of Computer Science in Software Engineering;
-                <br />
-                Undergraduate Certificate in Computer Networking
-                <br />
-                Suma Cum Laude GPA: 3.94
-              </p>
-              <StaticImage
-                src="../images/bachelors-degree.jpg"
-                alt="Bachelors Degree"
-                className="border border-dark border-2 my-2"
-              />
-              <StaticImage
-                src="../images/networking-cert.jpg"
-                alt="Networking Certificate"
-                className="border border-dark border-2 my-2"
-              />
+            <Accordion.Body className="d-flex flex-wrap">
+              <Container>
+                <Row>
+                  <Col>
+                    <p>
+                      <a
+                        href="https://www.park.edu/"
+                        style={{ color: "maroon", textDecoration: "none" }}
+                      >
+                        Park University
+                      </a>
+                      : Graduated 2021
+                      <br />
+                      Bachelors of Computer Science in Software Engineering
+                      <br />
+                      Undergraduate Certificate in Computer Networking
+                      <br />
+                      GPA: 3.94
+                    </p>
+                    <a href="https://www.parchment.com/u/award/8b89d253cefb4523753fe5b16b3ab702">
+                      <StaticImage
+                        src="../images/networking-cert.jpg"
+                        alt="Networking Certificate"
+                        className="border border-dark border-2 my-2"
+                      />
+                    </a>
+                  </Col>
+                  <Col>
+                    <a href="https://www.parchment.com/u/award/9806430d082d67b7528b5168b5b6ca00">
+                      <StaticImage
+                        src="../images/bachelors-degree.jpg"
+                        alt="Bachelors Degree"
+                        className="border border-dark border-2 my-2"
+                      />
+                    </a>
+                  </Col>
+                </Row>
+              </Container>
             </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="1">

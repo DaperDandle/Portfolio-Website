@@ -6,7 +6,9 @@ const Projects = () => {
   return (
     <Layout>
       <Container className="py-5">
-        <h1 className="text-center">Check Out My Projects!</h1>
+        <h1 className="text-center text-primary bg-dark">
+          Check Out My Projects!
+        </h1>
         <AllProjects />
       </Container>
     </Layout>

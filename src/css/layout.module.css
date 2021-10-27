@@ -5,11 +5,13 @@
 }
 
 .hero-bg {
-  background: radial-gradient(
-    circle,
-    rgba(13, 110, 253, 1) 0%,
-    rgba(255, 255, 255, 1) 100%
-  );
-  /* border-radius: 75% 0% 0% 25%; */
-  /* min-height: 100%; */
+  background-image: url("../images/code-bg.jpeg");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.bg-overlay {
+  background-color: dimgray;
+  opacity: 0.5;
 }
