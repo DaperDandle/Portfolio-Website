@@ -7,7 +7,7 @@ const Contact = () => {
       <Container>
         <Row className="justify-content-between py-3">
           <Col md={5} className="text-center card my-2">
-            <h3 className="mt-3">Like what you see?</h3>
+            <h2 className="mt-3">Like what you see?</h2>
             <hr className="bg-primary" />
             <p>
               If you liked my portfolio please feel free to send a message to my

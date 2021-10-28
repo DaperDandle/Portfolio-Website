@@ -1,5 +1,6 @@
 import React from "react";
 import { Container } from "react-bootstrap";
+
 const Tags = ({ tags }) => {
   return (
     <>
@@ -7,7 +8,7 @@ const Tags = ({ tags }) => {
       <Container className="d-flex flex-wrap justify-content-around">
         {tags.map((tag, index) => {
           return (
-            <div key={index} className="bg-light p-2 m-1 rounded">
+            <div key={index} className="bg-light p-2 m-1 rounded d-block">
               {tag}
             </div>
           );
