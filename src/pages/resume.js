@@ -6,32 +6,29 @@ const Resume = () => {
   return (
     <Layout>
       <Container className="py-5">
-        <h1 className="text-center">My Experience</h1>
-        <Row>
-          <Col></Col>
-        </Row>
+        <h1 className="text-center bg-dark text-primary">My Experience</h1>
         <Accordion defaultActiveKey="0" className="p-5">
           <Accordion.Item eventKey="0">
             <Accordion.Header>Education</Accordion.Header>
             <Accordion.Body className="d-flex flex-wrap">
               <Container>
                 <Row>
+                  <p className="text-center">
+                    <a
+                      href="https://www.park.edu/"
+                      style={{ color: "maroon", textDecoration: "none" }}
+                    >
+                      <h2>Park University</h2>
+                    </a>
+                    Graduated 2021
+                    <br />
+                    GPA: 3.94
+                  </p>
                   <Col>
-                    <p>
-                      <a
-                        href="https://www.park.edu/"
-                        style={{ color: "maroon", textDecoration: "none" }}
-                      >
-                        Park University
-                      </a>
-                      : Graduated 2021
-                      <br />
-                      Bachelors of Computer Science in Software Engineering
-                      <br />
-                      Undergraduate Certificate in Computer Networking
-                      <br />
-                      GPA: 3.94
-                    </p>
+                    <h2>Bachelor's of Science</h2>
+                    <p>Major: Software Engineering</p>
+                  </Col>
+                  <Col>
                     <a href="https://www.parchment.com/u/award/8b89d253cefb4523753fe5b16b3ab702">
                       <StaticImage
                         src="../images/networking-cert.jpg"
@@ -39,6 +36,12 @@ const Resume = () => {
                         className="border border-dark border-2 my-2"
                       />
                     </a>
+                  </Col>
+                </Row>
+                <Row>
+                  <Col>
+                    <h2>Undergraduate Certificate</h2>
+                    <p>Focus: Computer Networking</p>
                   </Col>
                   <Col>
                     <a href="https://www.parchment.com/u/award/9806430d082d67b7528b5168b5b6ca00">

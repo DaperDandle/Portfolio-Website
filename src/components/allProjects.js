@@ -4,49 +4,41 @@ import SingleProject from "./singleProject";
 
 import { Container, Row, Col } from "react-bootstrap";
 
-const AllProjects = ({ data }) => {
+const AllProjects = ({ data, tags }) => {
   const [projects, setProjects] = useState(data.allContentfulProject.nodes);
   const [selectedTag, setSelectedTag] = useState("all-projects");
-  // get array of tags arrays from each project
-  const allTags = projects.map((project) => project.tags.tags);
-
-  // combine multiple arrays into a single array
-  const getAllTags = (project) => {
-    const result = [];
-    project.forEach((project) => {
-      project.forEach((tag) => result.push(tag));
-    });
-    return result;
-  };
-
-  // only return the unique tags
-  const filteredTags = new Set(getAllTags(allTags));
 
   return (
     <Container>
-      <label htmlFor="projectFilter">Filter Project Tags</label>
-      <select
-        name="projectFilter"
-        id="projectFilter"
-        value={selectedTag}
-        onChange={(e) => {
-          setSelectedTag(e.target.value);
-        }}
-      >
-        {[...filteredTags].map((tag) => {
-          return <option value={tag}>{tag}</option>;
-        })}
-      </select>
-      <button
-        onClick={() => {
-          const newProjects = projects.filter((project) => {
-            return project.tags.tags.indexOf(selectedTag) > -1;
-          });
-          setProjects(newProjects);
-        }}
-      >
-        Filter Tags
-      </button>
+      <div className="text-primary bg-dark p-2 w-25">
+        <label htmlFor="projectFilter" className="me-2">
+          Filter By Project Tags:
+        </label>
+        <select
+          name="projectFilter"
+          id="projectFilter"
+          value={selectedTag}
+          onChange={(e) => {
+            setSelectedTag(e.target.value);
+          }}
+        >
+          {[...tags].map((tag) => {
+            return <option value={tag}>{tag}</option>;
+          })}
+        </select>
+        <button
+          className=" ms-2 text-dark btn btn-primary"
+          onClick={() => {
+            const newProjects = projects.filter((project) => {
+              return project.tags.tags.indexOf(selectedTag) > -1;
+            });
+            setProjects(newProjects);
+          }}
+        >
+          Filter
+        </button>
+      </div>
+
       <Row className="g-3">
         {projects.map((project) => {
           const {
