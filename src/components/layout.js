@@ -1,7 +1,7 @@
 import React from "react";
 import Navigation from "./navigation";
 import Footer from "./footer";
-import { globalStyles, heroBg, bgOverlay } from "../css/layout.module.css";
+import { globalStyles, heroBg } from "../css/layout.module.css";
 import { Container } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.css";
 

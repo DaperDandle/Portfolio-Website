@@ -15,7 +15,7 @@ const Index = () => {
               <StaticImage
                 src="../images/me.jpg"
                 alt="Daniel Weber"
-                className={` ${heroImg} img-fluid rounded-circle border border-dark border-5`}
+                className={`${heroImg} img-fluid rounded-circle border border-dark border-5`}
               />
             </Container>
           </Col>
@@ -23,7 +23,7 @@ const Index = () => {
             <h1 className="text-center">Hi, I'm Dan!</h1>
             <hr className="bg-dark" />
             <p className="fs-4">
-              Welcome to my portfolio website. I am an aspiring front-end
+              Welcome to my portfolio website. I am an aspiring front-end web
               developer looking to break into the industry. This is where you
               can find some of the projects I've been working on and see them in
               action. Access to the source code is also available!

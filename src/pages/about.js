@@ -6,7 +6,7 @@ import Layout from "../components/layout";
 const About = () => {
   return (
     <Layout>
-      <Container className="pt-3">
+      <Container className="pt-3 fs-5">
         <h1 className="text-center text-primary bg-dark">A Little About Me!</h1>
         <Row className="justify-content-between">
           <Col md={5} className="m-3">
@@ -16,10 +16,7 @@ const About = () => {
               className="img-fluid rounded-circle border border-dark border-5"
             />
           </Col>
-          <Col
-            md={5}
-            className="card m-3 text-primary bg-dark border-primary border-5"
-          >
+          <Col md={5} className="card m-3 border-primary border-5">
             <p>
               My name is Daniel Weber, I live in Kansas City Missouri with my
               wife Cassie and my cat Odin. I'm an aspiring front-end developer
@@ -36,14 +33,11 @@ const About = () => {
               className="img-fluid border border-dark border-5"
             />
           </Col>
-          <Col
-            md={5}
-            className="card m-3 text-primary bg-dark border-primary border-5"
-          >
+          <Col md={5} className="card m-3 border-primary border-5">
             <p>
-              Outside the web development world, I play lead guitar in a band
-              called the Protesters. We play fast, loud punk rock all around
-              Kansas City and the surrounding area.
+              I love both listening to and making music. I play lead guitar in a
+              band called the Protesters. We play fast, loud punk rock all
+              around Kansas City and the surrounding area.
             </p>
           </Col>
         </Row>
@@ -55,10 +49,7 @@ const About = () => {
               className="img-fluid border border-dark border-5"
             />
           </Col>
-          <Col
-            md={5}
-            className="card m-3 text-primary bg-dark border-primary border-5"
-          >
+          <Col md={5} className="card m-3 border-primary border-5">
             <p>
               I'm also a collector and player of the card game, Magic: the
               Gathering. I love using my problem solving skills and critical
