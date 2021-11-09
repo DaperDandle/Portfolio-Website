@@ -6,7 +6,7 @@ import { Container, Row, Col } from "react-bootstrap";
 const AllProjects = ({ projects }) => {
   return (
     <Container>
-      <Row className="g-3">
+      <Row lg={3} md={2} xs={1} className="g-3">
         {projects.map((project) => {
           const {
             contentfulid,
@@ -18,7 +18,7 @@ const AllProjects = ({ projects }) => {
             description: { description },
           } = project;
           return (
-            <Col md={4} key={contentfulid}>
+            <Col key={contentfulid}>
               <SingleProject
                 id={contentfulid}
                 url={url}

@@ -1,9 +1,0 @@
-.logos {
-  width: 100px;
-}
-
-@media only screen and (max-width: 750px) {
-  .hero-img {
-    display: none;
-  }
-}

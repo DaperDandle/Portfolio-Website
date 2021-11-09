@@ -1,20 +1,23 @@
 import React from "react";
-import { Container } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 
 const Tags = ({ tags }) => {
   return (
-    <>
-      <h5>Tags:</h5>
-      <Container className="d-flex flex-wrap justify-content-around">
+    <Container className="py-3">
+      <h5 className="pb-3">Tags:</h5>
+      <Row className="justify-content-center" xs={1} md={3}>
         {tags.map((tag, index) => {
           return (
-            <div key={index} className="bg-light p-2 m-1 rounded d-block">
+            <Col
+              key={index}
+              className="bg-light p-2 m-1 rounded d-block text-truncate"
+            >
               {tag}
-            </div>
+            </Col>
           );
         })}
-      </Container>
-    </>
+      </Row>
+    </Container>
   );
 };
 

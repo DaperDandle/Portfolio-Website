@@ -2,6 +2,8 @@ import React from "react";
 import Layout from "../components/layout";
 import { Container, Row, Col, Accordion } from "react-bootstrap";
 import { StaticImage } from "gatsby-plugin-image";
+import TechLogos from "../components/techLogos";
+import Certificates from "../components/certificates";
 const Resume = () => {
   return (
     <Layout>
@@ -113,16 +115,13 @@ const Resume = () => {
           </Accordion.Item>
           <Accordion.Item eventKey="2">
             <Accordion.Header>
-              <h3>Technologies Used</h3>
+              <h3>Technology Experience</h3>
             </Accordion.Header>
             <Accordion.Body>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
+              <Container className="text-center">
+                <h3>Some of my Favorite Tools:</h3>
+                <TechLogos />
+              </Container>
             </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="3">
@@ -130,13 +129,7 @@ const Resume = () => {
               <h3>Honors and Certifications</h3>
             </Accordion.Header>
             <Accordion.Body>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
+              <Certificates />
             </Accordion.Body>
           </Accordion.Item>
         </Accordion>
