@@ -10,16 +10,16 @@ const Index = () => {
     <Layout>
       <Container fluid className="p-5 br-3">
         <Row className="justify-content-around">
-          <Col md={5}>
+          <Col lg={5}>
             <Container>
               <StaticImage
                 src="../images/me-2.jpg"
                 alt="Daniel Weber"
-                className="hero-img img-fluid rounded-circle border border-dark border-5"
+                className="hero-img img-fluid rounded-circle my-3 border border-dark border-5"
               />
             </Container>
           </Col>
-          <Col md={5} className="bg-white card p-5">
+          <Col lg={5} className="bg-white card p-5">
             <h1 className="text-center">Hi, I'm Dan!</h1>
             <hr className="bg-dark" />
             <p className="fs-4">

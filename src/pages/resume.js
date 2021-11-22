@@ -4,6 +4,7 @@ import { Container, Row, Col, Accordion } from "react-bootstrap";
 import { StaticImage } from "gatsby-plugin-image";
 import TechLogos from "../components/techLogos";
 import Certificates from "../components/certificates";
+import PdfDownload from "../components/pdfDownload";
 const Resume = () => {
   return (
     <Layout>
@@ -17,17 +18,14 @@ const Resume = () => {
             <Accordion.Body className="d-flex flex-wrap">
               <Container>
                 <Row className="border-bottom border-primary mb-3 pb-3">
-                  <p className="text-center p-2">
-                    <a
-                      href="https://www.park.edu/"
-                      style={{ color: "maroon", textDecoration: "none" }}
-                    >
+                  <div className="text-center p-2">
+                    <a href="https://www.park.edu/" className="park-link">
                       <h2>Park University</h2>
                     </a>
                     Graduated 2021
                     <br />
                     GPA: 3.94
-                  </p>
+                  </div>
                   <Col md>
                     <h2>Bachelor's of Science</h2>
                     <p>Major: Software Engineering</p>
@@ -81,11 +79,11 @@ const Resume = () => {
                     />
                   </Col>
                   <Col md>
-                    <p>
+                    <div>
                       <h4>Position: PSI Utility Associate</h4>
                       2017-Present
-                    </p>
-                    <p>
+                    </div>
+                    <div>
                       Duties:
                       <br />
                       <ul>
@@ -94,12 +92,12 @@ const Resume = () => {
                         <li>Order Fullfillment</li>
                         <li>Customer Service</li>
                       </ul>
-                    </p>
-                    <p>
+                    </div>
+                    <div>
                       <h4>Position: Bulk Shipping Associate</h4>
                       2013-2017
-                    </p>
-                    <p>
+                    </div>
+                    <div>
                       Duties:
                       <br />
                       <ul>
@@ -107,7 +105,7 @@ const Resume = () => {
                         <li>Power Equipment Operation</li>
                         <li>Material Handling</li>
                       </ul>
-                    </p>
+                    </div>
                   </Col>
                 </Row>
               </Container>
@@ -129,10 +127,14 @@ const Resume = () => {
               <h3>Honors and Certifications</h3>
             </Accordion.Header>
             <Accordion.Body>
-              <Certificates />
+              <Container className="d-flex align-items-center">
+                <Certificates />
+              </Container>
             </Accordion.Body>
           </Accordion.Item>
         </Accordion>
+
+        <PdfDownload />
       </Container>
     </Layout>
   );

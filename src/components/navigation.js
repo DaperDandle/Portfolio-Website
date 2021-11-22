@@ -48,7 +48,7 @@ const Navigation = () => {
               className="text-decoration-none link-dark p-3"
               activeClassName="fw-bolder text-decoration-underline"
             >
-              Resume
+              Resumé
             </Link>
 
             <Link
