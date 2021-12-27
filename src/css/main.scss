@@ -9,9 +9,20 @@ $warning: #94fbab;
 }
 
 .hero-bg {
-  background-color: $primary;
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(98, 89, 126, 1) 20%,
+    rgba(66, 56, 100, 1) 27%,
+    rgba(47, 36, 84, 1) 36%,
+    rgba(31, 19, 70, 1) 44%,
+    rgba(13, 0, 56, 1) 58%
+  );
 }
 
+.primary-bg {
+  background-color: $primary;
+}
 .button {
   padding: 7px;
   border-radius: 10px;

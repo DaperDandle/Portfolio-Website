@@ -1,8 +1,7 @@
 import React from "react";
 import Layout from "../components/layout";
+import TechCloud from "../components/techCloud";
 import { Col, Row, Container } from "react-bootstrap";
-import { SiReact } from "react-icons/si";
-
 import { FaGithub } from "react-icons/fa";
 import { BsLinkedin } from "react-icons/bs";
 
@@ -35,8 +34,8 @@ const Index = () => {
               </a>
             </div>
           </Col>
-          <Col lg={5}>
-            <SiReact size={100} />
+          <Col>
+            <TechCloud />
           </Col>
         </Row>
       </Container>

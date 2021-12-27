@@ -9,7 +9,7 @@ const AllProjects = ({ projects }) => {
       <Row lg={3} md={2} xs={1} className="g-3">
         {projects.map((project) => {
           const {
-            contentfulid,
+            contentful_id,
             url,
             title,
             githubRepository,
@@ -18,9 +18,9 @@ const AllProjects = ({ projects }) => {
             description: { description },
           } = project;
           return (
-            <Col key={contentfulid}>
+            <Col key={contentful_id}>
               <SingleProject
-                id={contentfulid}
+                id={contentful_id}
                 url={url}
                 title={title}
                 preview={preview}

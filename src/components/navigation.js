@@ -4,7 +4,7 @@ import { Navbar, Container, Nav } from "react-bootstrap";
 
 const Navigation = () => {
   return (
-    <Container fluid className="p-0 hero-bg ">
+    <Container fluid className="p-0 primary-bg ">
       <Navbar expand="lg" className="mx-3">
         <Navbar.Toggle
           aria-controls="basic-navbar-nav"

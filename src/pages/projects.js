@@ -85,7 +85,7 @@ export const projects = graphql`
       nodes {
         url
         title
-        contentfulid
+        contentful_id
         githubRepository
         preview {
           gatsbyImageData

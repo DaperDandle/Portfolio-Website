@@ -3,14 +3,14 @@ import Container from "react-bootstrap/Container";
 import { RiGatsbyLine } from "react-icons/ri";
 const Footer = () => {
   return (
-    <Container fluid className="border-top hero-bg text-white border-3 p-3">
+    <Container fluid className="text-dark p-3">
       <footer className="d-flex justify-content-around">
         <p className="h5">
           Created with <RiGatsbyLine size={20} />
           atsby.js by{" "}
           <a
             href="mailto:danielweber4420@gmail.com"
-            className="text-decoration-none link-light"
+            className="text-decoration-none link-dark"
           >
             Daniel Weber
           </a>{" "}
