@@ -12,7 +12,7 @@ const Certificates = () => {
           <h3>Park University Suma Cum Laude</h3>
         </Col>
         <Col>
-          <GiDiploma size={40} className="text-danger" />
+          <GiDiploma size={40} />
         </Col>
       </Row>
       <Row className="py-3">
@@ -20,7 +20,7 @@ const Certificates = () => {
           <h3>National Honors Society</h3>
         </Col>
         <Col>
-          <FaUserGraduate size={40} className="text-primary" />
+          <FaUserGraduate size={40} />
         </Col>
       </Row>
       <Row className="py-3">
@@ -28,7 +28,7 @@ const Certificates = () => {
           <h3>Phi Theta Kappa Honors Society</h3>
         </Col>
         <Col>
-          <MdGrade size={40} className="text-warning" />
+          <MdGrade size={40} />
         </Col>
       </Row>
       <Row className="py-3">
@@ -36,7 +36,7 @@ const Certificates = () => {
           <h3>CCNA Curriculum Complete</h3>
         </Col>
         <Col>
-          <MdWifi size={40} className="text-info" />
+          <MdWifi size={40} />
         </Col>
       </Row>
     </Container>

@@ -16,6 +16,8 @@ module.exports = {
 
     "gatsby-plugin-sharp",
 
+    "gatsby-plugin-sass",
+
     {
       resolve: "gatsby-plugin-manifest",
       options: {

@@ -14,32 +14,32 @@ const TechLogos = () => {
     <Container className="text-center fs-5">
       <Row md={3} xs={2}>
         <Col>
-          <SiHtml5 className="text-primary" size={32} />
+          <SiHtml5 size={32} />
           <p>HTML 5</p>
         </Col>
 
         <Col>
-          <SiCss3 className="text-danger" size={32} />
+          <SiCss3 size={32} />
           <p>CSS 3</p>
         </Col>
 
         <Col>
-          <SiJavascript className="text-warning" size={32} />
+          <SiJavascript size={32} />
           <p>ES6</p>
         </Col>
 
         <Col>
-          <SiReact className="text-info" size={32} />
+          <SiReact size={32} />
           <p>React Js</p>
         </Col>
 
         <Col>
-          <SiGatsby style={{ color: "purple" }} size={32} />
+          <SiGatsby size={32} />
           <p>Gatsby Js</p>
         </Col>
 
         <Col>
-          <SiBootstrap style={{ color: "indigo" }} size={32} />
+          <SiBootstrap size={32} />
           <p>Bootstrap</p>
         </Col>
       </Row>

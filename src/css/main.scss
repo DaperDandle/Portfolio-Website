@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap");
+$primary: #0d0038;
+$secondary: #b8c5d6;
+$info: #306bac;
+$warning: #94fbab;
+@import "node_modules/bootstrap/scss/bootstrap";
+.global-styles {
+  font-family: "Play", sans-serif;
+}
+
+.hero-bg {
+  background-color: $primary;
+}
+
+.button {
+  padding: 7px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: white;
+  border: white 2px solid;
+  display: inline-flex;
+  align-items: center;
+}
+
+.button:hover {
+  color: $secondary;
+  background-color: $info;
+}
+
+.park-link {
+  color: maroon;
+  text-decoration: none;
+}
+
+/* styles for project tags hover */
+.img-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background-color: black;
+}
+
+.img-container:hover .project-img {
+  opacity: 0.3;
+}
+
+.img-container:hover .tags {
+  opacity: 1;
+}
+
+.project-img {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: 200px;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+
+.tags {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+@media only screen and (max-width: 750px) {
+  .hero-img {
+    display: none;
+  }
+}

@@ -1,27 +1,19 @@
 import React from "react";
 import Layout from "../components/layout";
 import { Col, Row, Container } from "react-bootstrap";
-import { StaticImage } from "gatsby-plugin-image";
-import { DiGithubAlt } from "react-icons/di";
+import { SiReact } from "react-icons/si";
+
+import { FaGithub } from "react-icons/fa";
 import { BsLinkedin } from "react-icons/bs";
 
 const Index = () => {
   return (
     <Layout>
       <Container fluid className="p-5 br-3">
-        <Row className="justify-content-around">
-          <Col lg={5}>
-            <Container>
-              <StaticImage
-                src="../images/me-2.jpg"
-                alt="Daniel Weber"
-                className="hero-img img-fluid rounded-circle my-3 border border-dark border-5"
-              />
-            </Container>
-          </Col>
-          <Col lg={5} className="bg-white card p-5">
-            <h1 className="text-center">Hi, I'm Dan!</h1>
-            <hr className="bg-dark" />
+        <Row>
+          <Col lg={5} className=" text-white p-5">
+            <h1 className="text-center">My Name is Dan</h1>
+            <hr className="bg-white" />
             <p className="fs-4">
               Welcome to my portfolio website. I am an aspiring front-end web
               developer looking to break into the industry. This is where you
@@ -29,17 +21,22 @@ const Index = () => {
               action. Access to the source code is also available on my Github.
               Please feel free to stay awhile and take a look around!
             </p>
-            <hr />
+            <hr className="bg-white" />
             <br />
-            <div className="align-items-center">
-              <h4>Check out my Github and LinkedIn!</h4>
-              <a href="https://github.com/DaperDandle" className="me-3">
-                <DiGithubAlt size={40} />
+            <div className="align-items-center text-center">
+              <a href="https://github.com/DaperDandle" className="me-3 button">
+                Github <FaGithub size={20} className="text-white ms-1" />
               </a>
-              <a href="https://www.linkedin.com/in/daniel-weber-a0a125219/">
-                <BsLinkedin size={30} />
+              <a
+                href="https://www.linkedin.com/in/daniel-weber-a0a125219/"
+                className="button"
+              >
+                LinkedIn <BsLinkedin size={20} className="text-white ms-1" />
               </a>
             </div>
+          </Col>
+          <Col lg={5}>
+            <SiReact size={100} />
           </Col>
         </Row>
       </Container>

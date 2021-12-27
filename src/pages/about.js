@@ -7,7 +7,9 @@ const About = () => {
   return (
     <Layout>
       <Container className="pt-3 fs-5">
-        <h1 className="text-center text-primary bg-dark">A Little About Me!</h1>
+        <h1 className="text-center text-white bg-primary">
+          A Little About Me!
+        </h1>
         <Row className="justify-content-between">
           <Col md={5} className="m-3">
             <StaticImage
