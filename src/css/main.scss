@@ -1,28 +1,30 @@
-@import url("https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap");
-$primary: #0d0038;
-$secondary: #b8c5d6;
-$info: #306bac;
+@import "node_modules/bootstrap/scss/functions";
+$primary: rgba(0, 48, 89, 1);
+$secondary: rgb(0, 0, 0);
+$info: #0257b1;
 $warning: #94fbab;
-@import "node_modules/bootstrap/scss/bootstrap";
+@import "/node_modules/bootstrap/scss/variables";
+@import "/node_modules/bootstrap/scss/mixins";
+@import "/node_modules/bootstrap/scss/root";
+
+@import url("https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap");
+
 .global-styles {
   font-family: "Play", sans-serif;
 }
 
 .hero-bg {
-  background: linear-gradient(
-    0deg,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(98, 89, 126, 1) 20%,
-    rgba(66, 56, 100, 1) 27%,
-    rgba(47, 36, 84, 1) 36%,
-    rgba(31, 19, 70, 1) 44%,
-    rgba(13, 0, 56, 1) 58%
-  );
-}
-
-.primary-bg {
   background-color: $primary;
 }
+
+.secondary-bg {
+  background-color: $secondary !important;
+}
+
+.feature-txt {
+  font-size: 80px;
+}
+
 .button {
   padding: 7px;
   border-radius: 10px;
@@ -31,11 +33,12 @@ $warning: #94fbab;
   border: white 2px solid;
   display: inline-flex;
   align-items: center;
+  background-color: transparent;
 }
 
 .button:hover {
-  color: $secondary;
-  background-color: $info;
+  color: white;
+  background-color: black;
 }
 
 .park-link {

@@ -8,19 +8,11 @@ import { BsLinkedin } from "react-icons/bs";
 const Index = () => {
   return (
     <Layout>
-      <Container fluid className="p-5 br-3">
-        <Row>
-          <Col lg={5} className=" text-white p-5">
-            <h1 className="text-center">My Name is Dan</h1>
-            <hr className="bg-white" />
-            <p className="fs-4">
-              Welcome to my portfolio website. I am an aspiring front-end web
-              developer looking to break into the industry. This is where you
-              can find some of the projects I've been working on and see them in
-              action. Access to the source code is also available on my Github.
-              Please feel free to stay awhile and take a look around!
-            </p>
-            <hr className="bg-white" />
+      <Container fluid className="py-5 br-3">
+        <Row className="pb-3">
+          <Col className="d-flex flex-column text-center text-white pb-5">
+            <h1 className="text-center feature-txt">DAN WEBER</h1>
+            <h5>WEB DEVELOPER &bull; WEB DESIGNER</h5>
             <br />
             <div className="align-items-center text-center">
               <a href="https://github.com/DaperDandle" className="me-3 button">
@@ -34,6 +26,8 @@ const Index = () => {
               </a>
             </div>
           </Col>
+        </Row>
+        <Row className="pb-4">
           <Col>
             <TechCloud />
           </Col>

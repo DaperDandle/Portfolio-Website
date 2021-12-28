@@ -28,10 +28,7 @@ const Projects = ({ data }) => {
   return (
     <Layout>
       <Container className="py-5">
-        <h1 className="text-center text-primary bg-dark">
-          Check Out My Projects!
-        </h1>
-        <Container className="text-primary text-center bg-dark p-3 w-50 ">
+        <Container className="text-white text-center secondary-bg rounded p-3 w-50 ">
           <Row xs={1} lg={3} className="align-items-center">
             <Col>
               <label htmlFor="projectFilter" className="fs-5">
@@ -59,7 +56,7 @@ const Projects = ({ data }) => {
             </Col>
             <Col>
               <button
-                className=" ms-2 text-dark btn btn-primary"
+                className="ms-2 button"
                 onClick={() => {
                   const newProjects = data.allContentfulProject.nodes.filter(
                     (project) => {
