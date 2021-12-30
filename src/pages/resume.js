@@ -9,12 +9,9 @@ const Resume = () => {
   return (
     <Layout>
       <Container className="py-5">
-        <h1 className="text-center bg-primary text-white rounded">
-          My Experience
-        </h1>
         <Accordion defaultActiveKey="0" className="p-5 fs-4">
           <Accordion.Item eventKey="0">
-            <Accordion.Header>
+            <Accordion.Header className="secondary-bg">
               <h3>Education</h3>
             </Accordion.Header>
             <Accordion.Body className="d-flex flex-wrap">

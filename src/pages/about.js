@@ -15,14 +15,15 @@ const About = () => {
               className="img-fluid rounded-circle"
             />
           </Col>
-          <Col md={5} className="text-white m-3 p-3">
+          <Col md={5} className="m-3 p-3">
             <p>
               My name is Daniel Weber, I live in Kansas City Missouri with my
-              wife. I love problem solving, being creative and taking a vision
-              from the drawing board to fully functional application. I'm a
-              front-end developer with experience using React, and Gatsby.
+              wife. I have experience using React, and Gatsby to create
+              inovative, elegant front end applications. I love problem solving,
+              being creative and taking a vision from the drawing board to fully
+              functional application.
             </p>
-            <hr className="text-white" />
+            <hr className="secondary-bg" />
           </Col>
         </Row>
       </Container>

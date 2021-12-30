@@ -1,8 +1,8 @@
-@import "node_modules/bootstrap/scss/functions";
-$primary: rgba(0, 48, 89, 1);
-$secondary: rgb(0, 0, 0);
+$primary: rgb(10, 10, 29);
+$secondary: rgb(235, 66, 0);
 $info: #0257b1;
 $warning: #94fbab;
+@import "node_modules/bootstrap/scss/functions";
 @import "/node_modules/bootstrap/scss/variables";
 @import "/node_modules/bootstrap/scss/mixins";
 @import "/node_modules/bootstrap/scss/root";
@@ -11,14 +11,24 @@ $warning: #94fbab;
 
 .global-styles {
   font-family: "Play", sans-serif;
+  color: $secondary;
 }
 
 .hero-bg {
+  background-color: $primary;
+  min-height: calc(100vh - 150px);
+}
+
+.primary-bg {
   background-color: $primary;
 }
 
 .secondary-bg {
   background-color: $secondary !important;
+}
+
+.layout {
+  height: 75px;
 }
 
 .feature-txt {
@@ -33,17 +43,30 @@ $warning: #94fbab;
   border: white 2px solid;
   display: inline-flex;
   align-items: center;
-  background-color: transparent;
+  background-color: $primary;
 }
 
 .button:hover {
   color: white;
-  background-color: black;
+  background-color: $secondary;
 }
 
 .park-link {
   color: maroon;
   text-decoration: none;
+}
+
+.project-card {
+  border: $secondary 3px solid;
+  background-color: $primary;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  max-width: 400px !important;
+  word-wrap: break-word;
+  background-clip: border-box;
+  border-radius: 0.25rem;
 }
 
 /* styles for project tags hover */

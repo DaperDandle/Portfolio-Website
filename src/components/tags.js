@@ -9,7 +9,7 @@ const Tags = ({ tags }) => {
           return (
             <Col
               key={index}
-              className="bg-primary text-light p-2 m-1 rounded d-block text-truncate"
+              className="secondary-bg text-light p-2 m-1 rounded d-block text-truncate"
             >
               {tag}
             </Col>

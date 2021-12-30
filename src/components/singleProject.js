@@ -15,7 +15,7 @@ const SingleProject = ({
 }) => {
   const image = getImage(preview);
   return (
-    <Container className="card text-white secondary-bg my-3 h-100 d-flex flex-column justify-content-around">
+    <Container className="project-card my-3 h-100 justify-content-around">
       <div className="img-container my-3">
         <GatsbyImage image={image} alt={title} className="project-img" />
         <Tags tags={tags} />

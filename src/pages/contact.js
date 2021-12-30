@@ -5,23 +5,21 @@ const Contact = () => {
   return (
     <Layout>
       <Container className="fs-5 pt-3">
-        <h1 className="text-center text-primary bg-dark">Contact Info</h1>
-        <Row className="justify-content-between py-3">
-          <Col md={5} className="text-center card my-2">
+        <Row className="justify-content-around py-3">
+          <Col md={5} className="text-center project-card my-2">
             <h2 className="mt-3">Like what you see?</h2>
-            <hr className="bg-primary" />
+            <hr className="secondary-bg" />
             <p>
               If you liked my portfolio please feel free to send a message to my
-              email using the form on the left or by calling me at{" "}
-              <span className="text-primary">816-668-3159</span>. I am currently
-              looking for a full time front-end developer position and would
-              love to hear from you!
+              email using the form on the left or by calling me at 816-668-3159.
+              I am currently looking for a full time front-end developer
+              position and would love to hear from you!
             </p>
           </Col>
-          <Col md={5} className="card p-3 my-2">
+          <Col md={5} className="project-card p-3 my-2">
             <Form action="https://formspree.io/f/xzbylqqo" method="POST">
               <h2 className="text-center">Get in Touch!</h2>
-              <hr className="bg-primary" />
+              <hr className="secondary-bg" />
               <Form.Group className="mb-3" controlId="nameInput">
                 <Form.Label>Name</Form.Label>
                 <Form.Control
