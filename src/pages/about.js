@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { StaticImage } from "gatsby-plugin-image";
 import Layout from "../components/layout";
+import TechLogos from "../components/techLogos";
 
 const About = () => {
   return (
@@ -15,16 +16,29 @@ const About = () => {
               className="img-fluid rounded-circle"
             />
           </Col>
-          <Col md={5} className="m-3 p-3">
-            <p>
-              My name is Daniel Weber, I live in Kansas City Missouri with my
-              wife. I have experience using React, and Gatsby to create
-              inovative, elegant front end applications. I love problem solving,
-              being creative and taking a vision from the drawing board to fully
-              functional application.
+          <Col
+            md={5}
+            className="m-3 p-3 rounded-circle secondary-bg text-center d-flex align-items-center primary-text justify-content-start"
+          >
+            <p className="p-3">
+              I'm Dan Weber, a Kansas City native looking to break into the web
+              development field. I love using{" "}
+              <span className="text-white fw-bold">
+                React, Gatsby, Bootstrap
+              </span>{" "}
+              and <span className="text-white fw-bold">Sass </span>
+              to create inovative, elegant front end applications. I'm a problem
+              solver, and enjoy being creative while taking a vision from the
+              drawing board to fully functional application.
             </p>
             <hr className="secondary-bg" />
           </Col>
+        </Row>
+        <Row className="py-3">
+          <h1 className="text-center text-white">Some of my Favorite Tools</h1>
+        </Row>
+        <Row>
+          <TechLogos></TechLogos>
         </Row>
       </Container>
     </Layout>

@@ -24,8 +24,8 @@ const SingleProject = ({
         {title}
       </a>
       <h5>{description}</h5>
-      <div className="d-flex py-3">
-        <h5 className="me-5">Github Repository: </h5>
+      <div className="d-flex align-items-center py-3">
+        <h5 className="m-3">Github Repository: </h5>
         <a href={githubRepository} className="link-light">
           <DiGithubAlt size={32} />
         </a>

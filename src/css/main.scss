@@ -1,8 +1,9 @@
+@import "node_modules/bootstrap/scss/functions";
 $primary: rgb(10, 10, 29);
 $secondary: rgb(235, 66, 0);
 $info: #0257b1;
 $warning: #94fbab;
-@import "node_modules/bootstrap/scss/functions";
+
 @import "/node_modules/bootstrap/scss/variables";
 @import "/node_modules/bootstrap/scss/mixins";
 @import "/node_modules/bootstrap/scss/root";
@@ -33,6 +34,10 @@ $warning: #94fbab;
 
 .feature-txt {
   font-size: 80px;
+}
+
+.primary-text {
+  color: $primary;
 }
 
 .button {

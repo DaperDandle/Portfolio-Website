@@ -5,7 +5,7 @@ import { FaRegFilePdf } from "react-icons/fa";
 
 const PdfDownload = () => {
   return (
-    <Container className="card bg-white p-3 w-25 ms-5">
+    <Container className="card bg-white p-3 w-25 ms-5 primary-text">
       <Row className="align-items-center">
         <Col className="text-wrap">
           <h5>PDF Version</h5>

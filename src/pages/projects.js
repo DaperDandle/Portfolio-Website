@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import Layout from "../components/layout";
 import AllProjects from "../components/allProjects";
+
 import { Container, Row, Col } from "react-bootstrap";
 import { graphql } from "gatsby";
 
@@ -28,14 +29,9 @@ const Projects = ({ data }) => {
   return (
     <Layout>
       <Container className="py-5">
-        <Container className="text-white text-center secondary-bg rounded p-3 w-50 ">
-          <Row xs={1} lg={3} className="align-items-center">
-            <Col>
-              <label htmlFor="projectFilter" className="fs-5">
-                Filter Project Tags:
-              </label>
-            </Col>
-            <Col className="my-3">
+        <Container className="project-card p-3 w-50 text-center">
+          <Row className="align-items-center justify-content-between">
+            <Col lg className="my-3">
               <select
                 name="projectFilter"
                 id="projectFilter"
@@ -54,9 +50,9 @@ const Projects = ({ data }) => {
                 })}
               </select>
             </Col>
-            <Col>
+            <Col lg>
               <button
-                className="ms-2 button"
+                className="button"
                 onClick={() => {
                   const newProjects = data.allContentfulProject.nodes.filter(
                     (project) => {

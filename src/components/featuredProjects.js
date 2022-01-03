@@ -46,8 +46,8 @@ const FeaturedProjects = () => {
   console.log(gatsbyObj, reactObj);
 
   return (
-    <Container className="w-75 mx-auto h-100 text-center">
-      <Row>
+    <Container className="w-75 mx-auto h-100 ">
+      <Row className="text-center">
         <Col
           onMouseEnter={() => setShowModal(true)}
           onMouseOut={() => setShowModal(false)}

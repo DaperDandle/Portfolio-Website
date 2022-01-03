@@ -2,21 +2,21 @@ import React from "react";
 import Layout from "../components/layout";
 import { Container, Row, Col, Accordion } from "react-bootstrap";
 import { StaticImage } from "gatsby-plugin-image";
-import TechLogos from "../components/techLogos";
+
 import Certificates from "../components/certificates";
 import PdfDownload from "../components/pdfDownload";
 const Resume = () => {
   return (
     <Layout>
       <Container className="py-5">
-        <Accordion defaultActiveKey="0" className="p-5 fs-4">
+        <Accordion defaultActiveKey="0" className="p-5  fs-4">
           <Accordion.Item eventKey="0">
             <Accordion.Header className="secondary-bg">
               <h3>Education</h3>
             </Accordion.Header>
-            <Accordion.Body className="d-flex flex-wrap">
+            <Accordion.Body className="d-flex flex-wrap primary-text secondary-bg">
               <Container>
-                <Row className="border-bottom border-primary mb-3 pb-3">
+                <Row className="border-bottom border-dark mb-3 pb-3">
                   <div className="text-center p-2">
                     <a href="https://www.park.edu/" className="park-link">
                       <h2>Park University</h2>
@@ -61,10 +61,10 @@ const Resume = () => {
             <Accordion.Header>
               <h3>Work Experience</h3>
             </Accordion.Header>
-            <Accordion.Body>
+            <Accordion.Body className="primary-text secondary-bg">
               <Container>
                 <Row>
-                  <Col md>
+                  <Col lg className="m-3">
                     <h3>Guitar Center</h3>
                     <p>
                       Dates Worked: 2013-Present
@@ -77,7 +77,7 @@ const Resume = () => {
                       alt="Guitar Center Logo"
                     />
                   </Col>
-                  <Col md>
+                  <Col lg className="m-3">
                     <div>
                       <h4>Position: PSI Utility Associate</h4>
                       2017-Present
@@ -110,22 +110,12 @@ const Resume = () => {
               </Container>
             </Accordion.Body>
           </Accordion.Item>
-          <Accordion.Item eventKey="2">
-            <Accordion.Header>
-              <h3>Technology Experience</h3>
-            </Accordion.Header>
-            <Accordion.Body>
-              <Container className="text-center">
-                <h3>Some of my Favorite Tools:</h3>
-                <TechLogos />
-              </Container>
-            </Accordion.Body>
-          </Accordion.Item>
+
           <Accordion.Item eventKey="3">
             <Accordion.Header>
               <h3>Honors and Certifications</h3>
             </Accordion.Header>
-            <Accordion.Body>
+            <Accordion.Body className="primary-text secondary-bg">
               <Container className="d-flex align-items-center">
                 <Certificates />
               </Container>

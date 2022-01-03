@@ -7,6 +7,9 @@ import {
   SiReact,
   SiGatsby,
   SiBootstrap,
+  SiVisualstudiocode,
+  SiSass,
+  SiGit,
 } from "react-icons/si";
 
 const TechLogos = () => {
@@ -15,32 +18,47 @@ const TechLogos = () => {
       <Row md={3} xs={2}>
         <Col>
           <SiHtml5 size={32} />
-          <p>HTML 5</p>
+          <p className="text-white">HTML 5</p>
         </Col>
 
         <Col>
           <SiCss3 size={32} />
-          <p>CSS 3</p>
+          <p className="text-white">CSS 3</p>
         </Col>
 
         <Col>
           <SiJavascript size={32} />
-          <p>ES6</p>
+          <p className="text-white">ES6</p>
         </Col>
 
         <Col>
           <SiReact size={32} />
-          <p>React Js</p>
+          <p className="text-white">React Js</p>
         </Col>
 
         <Col>
           <SiGatsby size={32} />
-          <p>Gatsby Js</p>
+          <p className="text-white">Gatsby Js</p>
         </Col>
 
         <Col>
           <SiBootstrap size={32} />
-          <p>Bootstrap</p>
+          <p className="text-white">Bootstrap</p>
+        </Col>
+
+        <Col>
+          <SiVisualstudiocode size={32} />
+          <p className="text-white">Visual Studio Code</p>
+        </Col>
+
+        <Col>
+          <SiSass size={32} />
+          <p className="text-white">Sass</p>
+        </Col>
+
+        <Col>
+          <SiGit size={32} />
+          <p className="text-white">Git</p>
         </Col>
       </Row>
     </Container>
