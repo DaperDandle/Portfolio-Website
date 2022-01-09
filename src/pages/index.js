@@ -1,5 +1,6 @@
 import React from "react";
 import Layout from "../components/layout";
+import SEO from "../components/SEO";
 import { Col, Row, Container } from "react-bootstrap";
 import { FaGithub } from "react-icons/fa";
 import { BsLinkedin } from "react-icons/bs";
@@ -8,6 +9,7 @@ import FeaturedProjects from "../components/featuredProjects";
 const Index = () => {
   return (
     <Layout>
+      <SEO title="Home" />
       <Container fluid className="py-5 br-3">
         <Row className="pb-3">
           <Col className="d-flex flex-column text-center pb-5">

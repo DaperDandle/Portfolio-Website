@@ -9,7 +9,7 @@ const Layout = ({ children }) => {
   return (
     <main className="global-styles">
       <Navigation />
-      <Container fluid className="hero-bg  w-100 h-100">
+      <Container fluid className="hero-bg w-100 h-100">
         {children}
       </Container>
       <Footer />

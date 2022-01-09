@@ -2,12 +2,14 @@ import React from "react";
 import Layout from "../components/layout";
 import { Container, Row, Col, Accordion } from "react-bootstrap";
 import { StaticImage } from "gatsby-plugin-image";
+import SEO from "../components/SEO";
 
 import Certificates from "../components/certificates";
 import PdfDownload from "../components/pdfDownload";
 const Resume = () => {
   return (
     <Layout>
+      <SEO title="Resume"></SEO>
       <Container className="py-5">
         <Accordion defaultActiveKey="0" className="p-5  fs-4">
           <Accordion.Item eventKey="0">

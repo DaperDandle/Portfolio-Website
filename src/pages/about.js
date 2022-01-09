@@ -3,10 +3,12 @@ import { Container, Row, Col } from "react-bootstrap";
 import { StaticImage } from "gatsby-plugin-image";
 import Layout from "../components/layout";
 import TechLogos from "../components/techLogos";
+import SEO from "../components/SEO";
 
 const About = () => {
   return (
     <Layout>
+      <SEO title="About"></SEO>
       <Container className="pt-3 fs-5">
         <Row className="justify-content-around">
           <Col md={5} className="m-3">

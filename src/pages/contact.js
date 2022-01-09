@@ -1,9 +1,11 @@
 import React from "react";
 import Layout from "../components/layout";
 import { Form, Container, Row, Col } from "react-bootstrap";
+import SEO from "../components/SEO";
 const Contact = () => {
   return (
     <Layout>
+      <SEO title="Contact"></SEO>
       <Container className="fs-5 pt-3">
         <Row className="justify-content-around py-3">
           <Col md={5} className="text-center project-card my-2">

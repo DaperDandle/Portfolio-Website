@@ -4,9 +4,9 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
-    title: "Daniel Weber's Portfolio",
-    description: "My portfolio with the projects I've completed",
+    siteUrl: "https://daniel-weber-portfolio.netlify.app/",
+    title: "Dan Weber",
+    description: "Daniel Weber's front-end portfolio",
     author: "Daniel Weber",
   },
   plugins: [
@@ -17,6 +17,8 @@ module.exports = {
     "gatsby-plugin-sharp",
 
     "gatsby-plugin-sass",
+
+    "gatsby-plugin-react-helmet",
 
     {
       resolve: "gatsby-plugin-manifest",

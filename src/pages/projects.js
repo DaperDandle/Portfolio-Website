@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import Layout from "../components/layout";
 import AllProjects from "../components/allProjects";
+import SEO from "../components/SEO";
 
 import { Container, Row, Col } from "react-bootstrap";
 import { graphql } from "gatsby";
@@ -28,6 +29,7 @@ const Projects = ({ data }) => {
 
   return (
     <Layout>
+      <SEO title="Projects"></SEO>
       <Container className="py-5">
         <Container className="project-card p-3 w-50 text-center">
           <Row className="align-items-center justify-content-between">
