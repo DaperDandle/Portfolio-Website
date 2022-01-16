@@ -20,7 +20,12 @@ const SingleProject = ({
         <GatsbyImage image={image} alt={title} className="project-img" />
         <Tags tags={tags} />
       </div>
-      <a href={url} className="link-light text-decoration-none fs-4">
+      <a
+        href={url}
+        target="_blank"
+        rel="noreferrer"
+        className="link-light text-decoration-none fs-4"
+      >
         {title}
       </a>
       <h5>{description}</h5>

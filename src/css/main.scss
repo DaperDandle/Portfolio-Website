@@ -1,8 +1,6 @@
 @import "node_modules/bootstrap/scss/functions";
 $primary: #0a0a1d;
 $secondary: #eb4300;
-$info: #0257b1;
-$warning: #94fbab;
 
 @import "/node_modules/bootstrap/scss/variables";
 @import "/node_modules/bootstrap/scss/mixins";
@@ -110,8 +108,10 @@ $warning: #94fbab;
   text-align: center;
 }
 
-@media only screen and (max-width: 750px) {
-  .hero-img {
-    display: none;
-  }
+.movement {
+  transition: transform 1s;
+}
+
+.movement:hover {
+  transform: translate(0, -20%);
 }
