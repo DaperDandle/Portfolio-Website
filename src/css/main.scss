@@ -55,7 +55,12 @@ $secondary: #eb4300;
 }
 
 .park-link {
-  color: maroon;
+  color: $primary;
+  text-decoration: none;
+}
+
+.park-link:hover {
+  color: white;
   text-decoration: none;
 }
 

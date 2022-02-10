@@ -2,6 +2,7 @@ import React from "react";
 import Layout from "../components/layout";
 import { Container, Row, Col, Accordion } from "react-bootstrap";
 import { StaticImage } from "gatsby-plugin-image";
+import Job from "../components/job";
 import SEO from "../components/SEO";
 
 import Certificates from "../components/certificates";
@@ -71,8 +72,9 @@ const Resume = () => {
                     <p>
                       Dates Worked: 2013-Present
                       <br />
-                      Address: 4001 N. Norfleet Rd. Kansas City, MO 64116 Phone
-                      Number: 816-423-5800
+                      Address: 4001 N. Norfleet Rd. Kansas City, MO 64116
+                      <br />
+                      Phone Number: 816-423-5800
                     </p>
                     <StaticImage
                       src="../images/gc-logo.jpg"
@@ -80,33 +82,37 @@ const Resume = () => {
                     />
                   </Col>
                   <Col lg className="m-3">
-                    <div>
-                      <h4>Position: PSI Utility Associate</h4>
-                      2017-Present
-                    </div>
-                    <div>
-                      Duties:
-                      <br />
-                      <ul>
-                        <li>Inventory Management</li>
-                        <li>Inbound Inventory Inspection</li>
-                        <li>Order Fullfillment</li>
-                        <li>Customer Service</li>
-                      </ul>
-                    </div>
-                    <div>
-                      <h4>Position: Bulk Shipping Associate</h4>
-                      2013-2017
-                    </div>
-                    <div>
-                      Duties:
-                      <br />
-                      <ul>
-                        <li>Order Shippment</li>
-                        <li>Power Equipment Operation</li>
-                        <li>Material Handling</li>
-                      </ul>
-                    </div>
+                    <Job
+                      position="PRG Returns Technician"
+                      dates="2021-Present"
+                      duties={[
+                        "Researching Return Information",
+                        "Inventory Inspection",
+                        "Defect Diagnosis",
+                        "Instrument Setup and Repair",
+                      ]}
+                    />
+                    <hr />
+                    <Job
+                      position="PSI Utility Associate"
+                      dates="2017-2021"
+                      duties={[
+                        "Inventory Management",
+                        "Inbound Inventory Inspection",
+                        "Order Fullfillment",
+                        "Customer Service",
+                      ]}
+                    />
+                    <hr />
+                    <Job
+                      position="Bulk Shipping Associate"
+                      dates="2013-2017"
+                      duties={[
+                        "Order Shippment",
+                        "Power Equipment Operation",
+                        "Material Handling",
+                      ]}
+                    />
                   </Col>
                 </Row>
               </Container>
