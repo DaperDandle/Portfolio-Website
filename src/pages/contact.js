@@ -6,16 +6,17 @@ const Contact = () => {
   return (
     <Layout>
       <SEO title="Contact"></SEO>
-      <Container className="fs-5 pt-3">
+      <Container className="fs-5 pt-3 text-white">
         <Row className="justify-content-around py-3">
           <Col md={5} className="text-center project-card my-2">
             <h2 className="mt-3">Like what you see?</h2>
             <hr className="secondary-bg" />
             <p>
               If you liked my portfolio please feel free to send a message to my
-              email using the form on the left or by calling me at 816-668-3159.
-              I am currently looking for a full time front-end developer
-              position and would love to hear from you!
+              email using the form on the left or by calling me at{" "}
+              <span className="secondary-text">816-668-3159</span> I am
+              currently looking for a full time front-end developer position and
+              would love to hear from you!
             </p>
           </Col>
           <Col md={5} className="project-card p-3 my-2">
