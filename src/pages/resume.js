@@ -4,9 +4,8 @@ import { Container, Row, Col, Accordion } from "react-bootstrap";
 import { StaticImage } from "gatsby-plugin-image";
 import Job from "../components/job";
 import SEO from "../components/SEO";
-
 import Certificates from "../components/certificates";
-import PdfDownload from "../components/pdfDownload";
+import ResumeDownload from "../components/resumeDownload";
 const Resume = () => {
   return (
     <Layout>
@@ -60,6 +59,7 @@ const Resume = () => {
               </Container>
             </Accordion.Body>
           </Accordion.Item>
+
           <Accordion.Item eventKey="1">
             <Accordion.Header>
               <h3>Work Experience</h3>
@@ -130,8 +130,13 @@ const Resume = () => {
             </Accordion.Body>
           </Accordion.Item>
         </Accordion>
-
-        <PdfDownload />
+        <Container className="d-flex justify-content-between">
+          <ResumeDownload resume="../documents/Pdf-Resume.pdf" version="PDF" />
+          <ResumeDownload
+            resume="../documents/Word-Resume.docx"
+            version="Word"
+          />
+        </Container>
       </Container>
     </Layout>
   );
