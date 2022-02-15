@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
 import SingleProject from "./singleProject";
 import { Container, Row, Col } from "react-bootstrap";
@@ -6,8 +6,6 @@ import { FaReact } from "react-icons/fa";
 import { SiGatsby } from "react-icons/si";
 
 const FeaturedProjects = () => {
-  const [showModal, setShowModal] = useState(false);
-
   const data = useStaticQuery(graphql`
     {
       allContentfulProject(filter: { tags: { tags: { in: "featured" } } }) {
@@ -43,15 +41,10 @@ const FeaturedProjects = () => {
 
   const reactObj = Object.assign({}, ...reactProject);
 
-  console.log(gatsbyObj, reactObj);
-
   return (
     <Container className="w-75 mx-auto h-100 ">
       <Row className="text-center">
-        <Col
-          onMouseEnter={() => setShowModal(true)}
-          onMouseOut={() => setShowModal(false)}
-        >
+        <Col>
           <FaReact size={100} />
         </Col>
         <Col>

@@ -3,6 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import { FaRegFilePdf, FaRegFileWord } from "react-icons/fa";
 
 const ResumeDownload = ({ resume, version }) => {
+  console.log(resume);
   return (
     <Container className="card bg-white p-3 w-25 primary-text">
       <Row className="align-items-center">
