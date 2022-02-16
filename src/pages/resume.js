@@ -5,7 +5,8 @@ import { StaticImage } from "gatsby-plugin-image";
 import Job from "../components/job";
 import SEO from "../components/SEO";
 import Certificates from "../components/certificates";
-import ResumeDownload from "../components/resumeDownload";
+import AllResumeDownloads from "../components/allResumeDownloads";
+
 const Resume = () => {
   return (
     <Layout>
@@ -130,13 +131,7 @@ const Resume = () => {
             </Accordion.Body>
           </Accordion.Item>
         </Accordion>
-        <Container className="d-flex justify-content-between">
-          <ResumeDownload resume="../documents/Pdf-Resume.pdf" version="PDF" />
-          <ResumeDownload
-            resume="../documents/Word-Resume.docx"
-            version="Word"
-          />
-        </Container>
+        <AllResumeDownloads />
       </Container>
     </Layout>
   );
