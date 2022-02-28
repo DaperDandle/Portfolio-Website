@@ -13,7 +13,7 @@ const Contact = () => {
             <hr className="secondary-bg" />
             <p>
               If you liked my portfolio please feel free to send a message to my
-              email using the form on the left or by calling me at{" "}
+              email using the form on the right or by calling me at{" "}
               <span className="secondary-text">816-668-3159</span> I am
               currently looking for a full time front-end developer position and
               would love to hear from you!

@@ -13,7 +13,9 @@ const Index = () => {
       <Container fluid className="py-5 br-3">
         <Row className="pb-3">
           <Col className="d-flex flex-column text-center pb-5">
-            <h1 className=" text-white text-center feature-txt">DAN WEBER</h1>
+            <h1 className=" text-white text-center feature-txt">
+              DANIEL WEBER
+            </h1>
             <h5>
               WEB DEVELOPER <span className="text-white">&bull;</span> WEB
               DESIGNER

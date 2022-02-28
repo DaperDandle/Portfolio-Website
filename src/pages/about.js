@@ -23,8 +23,8 @@ const About = () => {
             className="m-3 p-3 rounded-circle secondary-bg text-center d-flex align-items-center primary-text justify-content-start"
           >
             <p className="p-4">
-              I'm Dan Weber, a Kansas City native looking to break into the web
-              development field. I love using technologies like{" "}
+              I'm Daniel Weber, a Kansas City native looking to break into the
+              web development field. I love using technologies like{" "}
               <span className="text-white fw-bold">
                 React, Gatsby, Bootstrap
               </span>{" "}
